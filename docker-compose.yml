@@ -3,9 +3,9 @@ services:
     image: postgres:16
     env_file:
       - .env
-    container_name: teamfinder_db
+    container_name: teamfinder_db_3
     ports:
-      - "5432:5432"
+      - "5434:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: always
