@@ -6,6 +6,6 @@ User = get_user_model()
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ['id', 'email', 'name', 'surname', 'is_active']
-    search_fields = ['email', 'name', 'surname']
-    list_filter = ['is_active', 'is_staff']
+    list_display = ["id", "email", "name", "surname", "is_active"]
+    search_fields = ["email", "name", "surname"]
+    list_filter = ["is_active", "is_staff"]

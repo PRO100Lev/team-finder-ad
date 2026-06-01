@@ -5,13 +5,13 @@ from .models import Project, Skill
 
 @admin.register(Skill)
 class SkillAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name']
-    search_fields = ['name']
+    list_display = ["id", "name"]
+    search_fields = ["name"]
 
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'owner', 'status', 'created_at']
-    search_fields = ['name', 'description']
-    list_filter = ['status']
-    readonly_fields = ['created_at']
+    list_display = ["id", "name", "owner", "status", "created_at"]
+    search_fields = ["name", "description"]
+    list_filter = ["status"]
+    readonly_fields = ["created_at"]
